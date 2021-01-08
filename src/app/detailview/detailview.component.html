@@ -1,0 +1,76 @@
+<p>DETAIL VIEW</p>
+<div *ngIf="SpecificStudent">
+    <div>
+        <h3><span>Mat N0: </span>{{SpecificStudent.matricule}}</h3>
+        <h3><span>Name: </span>{{SpecificStudent.name | uppercase}} </h3>
+    </div>
+    <div>
+        <h3>Transcript</h3>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Cred Value</th>
+                <th>Score</th>
+                <th>Let-Gr</th>
+                <th>Grade Points</th>
+                <th>Course Points</th>
+            </tr>
+            <tr>
+                <td>CSC205</td>
+                <td>4</td>
+                <td>69</td>
+                <td>B</td>
+                <td>3</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>CSC207</td>
+                <td>4</td>
+                <td>69</td>
+                <td>B</td>
+                <td>3</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>CSC205</td>
+                <td>4</td>
+                <td>69</td>
+                <td>B</td>
+                <td>3</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>CSC205</td>
+                <td>4</td>
+                <td>69</td>
+                <td>B</td>
+                <td>3</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>CSC205</td>
+                <td>4</td>
+                <td>69</td>
+                <td>B</td>
+                <td>3</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>CSC205</td>
+                <td>4</td>
+                <td>69</td>
+                <td>B</td>
+                <td>3</td>
+                <td>12</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <label>name:
+        <input [(ngModel)]="SpecificStudent.name" placeholder="name"/>
+      </label>
+    </div>
+    <button (click)="goBack()">go back</button>
+    <button (click)="save()">save</button>
+</div>

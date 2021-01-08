@@ -1,0 +1,15 @@
+/* Footer */
+
+.footer {
+    z-index: -10;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    opacity: 50%;
+    background-image: url(../generalimg/41.jpg);
+}
